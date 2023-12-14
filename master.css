@@ -1,0 +1,158 @@
+/* ESTILO GENERAL*/
+body {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.25rem;
+  letter-spacing: 0.3rem;
+  margin: 0;
+  padding: 0;
+  animation: aparecer 3s ease-in-out forwards;
+  background-image: url(https://i.pinimg.com/originals/53/5c/11/535c1175873becf667d4b630dcf6b343.gif);
+}
+
+/* TITULO PRINCIPAL */
+h1 {
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  letter-spacing: 0.5rem;
+  color: blueviolet;
+  opacity: 0;
+  animation: aparecer 2s ease-in-out forwards;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  #colours {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #colours img {
+    margin: 5px; /* Ajusta el margen según sea necesario */
+  }
+
+  #game-container p {
+    text-align: center;
+  }
+
+  #guessInput {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+
+  #attempts-container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* CONTENEDOR JUEGO */
+#game-container {
+  margin-top: 20px;
+  text-align: center;
+
+}
+
+/* ANIMACION APARECER */
+@keyframes aparecer{
+from{
+opacity: 0;
+}
+to {
+  opacity: 1;
+}
+}
+
+/* PARRAFOS */
+p {
+  color: #ffffff;
+  
+}
+
+/* MAS ESTILOS BOTON */
+button {
+  padding: 10px;
+  margin: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* PASAR CURSOS POR ENCIMA DEL BOTON */
+button:hover {
+  background-color: #45a049;
+}
+
+/* CONTENEDOR INTENTOS */
+#attempts-container {
+  margin-top: 20px;
+  color: blueviolet;
+  font-size: 1.2rem;
+  
+}
+
+/* INTENTOS */
+#attempts {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* COLORES  */
+#colours {
+  text-align: center;
+  
+
+}
+
+/* COLORES BOLITAS */
+#colours img {
+  width: 50px;
+
+  height: auto;
+
+  margin: 5px;
+
+  display: inline-block;
+
+  vertical-align: middle;
+
+}
+
+/* ESTILOS DEL INPUT */
+#guessInput {
+  
+  width: 200px; 
+  padding: 10px;
+  margin: 5px;
+  box-sizing: border-box;
+  box-shadow: 0 0 2px rgb(255, 255, 255);
+  
+  
+  font-family: Arial, sans-serif; 
+  font-size: 14px; 
+  
+  
+  border: 3px solid #4caf50; 
+  border-radius: 5px; 
+
+  
+  ::placeholder {
+    color: #999; 
+  }
+}
+
+
+/* CONTENEDOR VIDAS RESTANTES */
+#vidas-container {
+  color: white;
+
+}

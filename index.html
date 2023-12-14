@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jorge Diez Rodriguez</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Space+Grotesk:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="master.css">
+
+</head>
+
+<body>
+  <!-- TITULO PRINCIPAL -->
+  <div class="container">
+    <h1>MasterMind Jorge Diez Rodriguez</h1>
+    <!-- DESCRIPCION DEL JUEGO -->
+    <div id="game-container">
+      <p>En este juego tendras que adivinar la combinacion de colores que se genera aleatoriamente en 5 intentos.</p>
+      <p>Cuando aciertes un color en su posicion en jugadas recientes se mostrara en verde, y si esta mal, se mostrara en
+        rojo.</p>
+      <p id="colours">Los colores disponibles son: <img
+          src="https://images.vexels.com/media/users/3/143293/isolated/preview/de3a1587160d770a52903c66239ab794-bola-de-marmol-roja.png"
+          alt=""> <img
+          src="https://images.vexels.com/media/users/3/143296/isolated/preview/65e481f9924c73dec1035884e544f284-bola-de-marmol-amarilla.png"
+          alt=""> <img
+          src="https://images.vexels.com/media/users/3/143282/isolated/preview/d2f39ec3ce2a3c0e7659e7a75f7991bf-bola-de-marmol-verde.png"
+          alt=""> <img
+          src="https://images.vexels.com/media/users/3/143274/isolated/preview/5228055c3a0be6380d900f3321d7a206-bola-de-marmol-azul.png"
+          alt=""></p>
+
+      <!-- ESPACIO PARA COLOCAR TUS COLORES -->
+      <input type="text" id="guessInput" placeholder="Combinacion de colores">
+      <!-- BOTON ADIVINAR -->
+      <button onclick="comprobarAdivinanza()">Adivinar</button>
+      <div id="result"></div>
+      <!-- CONTENEDOR DE VIDAS -->
+      <div id="vidas-container">Vidas: <span id="vidas"></span></div>
+      <!-- SECCION JUGADAS ANTERIORES -->
+      <div id="attempts-container">
+        <h2>Jugadas anteriores:</h2>
+        <ul id="attempts"></ul>
+      </div>
+      <script src="master2.js"></script>
+    </div>
+  </div>
+</body>
+
+</html>
